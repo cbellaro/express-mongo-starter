@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <%- include ('./partials/head.ejs') %>
+    </head>
+    <body>
+        <a href="/"><h1>Bookly</h1></a>
+        <nav class="black">
+            <%- include ('./partials/nav.ejs') %>
+        </nav>
+        <div class="post">
+            <h2><%=post.title; %></h2>
+            <%=post.body; %>
+        </div>
+        <nav class="black">
+            <a href="/posts">Back to discussions</a>
+        </nav>
+    </body>
+</html>

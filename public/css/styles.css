@@ -1,0 +1,77 @@
+body{
+    background-color: #9FB1BC;
+    background-image: url("https://i.imgur.com/5vkTr0E.jpg");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+h1{
+    color: #E2C044;
+  text-shadow:
+    -1px -1px 0 rgb(37,20,36),
+    1px -1px 0 rgb(37,20,36),
+    -1px 1px 0 rgb(37,20,36),
+     1px 1px 0 rgb(37,20,36);
+     margin-left: 5%;
+     font-family: Pacifico;
+}
+
+.posts ul{
+    display: flex;
+}
+
+.posts li{
+    flex-wrap: wrap;
+    background-image: url("https://i.imgur.com/QUmf6YS.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    color: #D3D0CB;
+    margin-bottom: 2%;
+    border: 1px solid #E2C044;
+    width: 300px;
+    height: 240px;
+    margin-left: 2%;
+    border-radius: 18px;
+    text-align: center;
+    font-family: Bad Script;
+}
+
+.posts a{
+    color: #E2C044;
+    font-size: 24px;
+    text-decoration: underline;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#edit{
+    color: black;
+    display: inline;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+form{
+    display: inline;
+}
+
+#back a{
+    color: black;
+}
+
+.post{
+    background-color: #9FB1BC;
+    height: 300px;
+    width: 500px;
+}
+
+.post-container{
+    background-color: #9FB1BC;
+    height: 340px;
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}

@@ -38,7 +38,7 @@ app.use(session({
 app.use(express.json());
 
 
-const postsController = require('./controllers/posts.js');
+const postsController = require('./controllers/posts_controller.js');
 app.use('/posts', postsController);
 const userController = require('./controllers/users_controller.js')
 app.use('/users', userController)
