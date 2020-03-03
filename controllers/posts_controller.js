@@ -10,7 +10,7 @@ const isAuthenticated = (req, res, next) => {
 }
 
 // const isOriginalPoster = (req, res, next) => {
-//   if (req.session.currentUser === req.) {
+//   if (req.session.currentUser === req.session.id) {
 //     return next()
 //   } else {
 //     res.send('<a  href="/">Sorry, you did not author that post </a>')
@@ -59,6 +59,7 @@ router.get('/:id/edit', isAuthenticated, (req, res) => {
 router.post('/', isAuthenticated, (req, res)=>{
     Post.create(req.body, (err, createdPost) => {
         res.redirect('/posts')
+        console.log(req.body);
     })
 });
 
