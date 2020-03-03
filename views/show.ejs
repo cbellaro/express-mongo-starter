@@ -12,7 +12,8 @@
         </nav>
         <div class="post">
             <h2><%=post.title; %></h2>
-            <h4><%=post.chapters; %></h4>
+            <h4>By <%=post.author; %></h4>
+            <h4>Chapters <%=post.chapters; %></h4>
             <%=post.body; %>
             <br><br>
             <button class="btn-small yellow darken-2"><a id = "edit" href="/posts/<%=post.id; %>/edit">EDIT</a></button>

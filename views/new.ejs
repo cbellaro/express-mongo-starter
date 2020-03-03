@@ -14,9 +14,11 @@
       <h1>Create a new post</h1>
       <form action="/posts" method="POST">
         <label for="title">Title:</label>
-        <input type="text" name="title" required />
+        <input type="text" name="title" placeholder="Please enter the title of your book" required />
+        <label for="author">Author:</label>
+        <input type="text" name="author" placeholder="Please enter the author of your book" required />
         <label for="chapters">Chapters:</label>
-        <input type="text" name="chapters" />
+        <input type="text" name="chapters" placeholder="Please enter the chapters you'd like to talk about"/>
         <br>
         <label for="body">Body:</label><br>
         <textarea name="body" value="body" /></textarea>

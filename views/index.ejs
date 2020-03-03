@@ -16,7 +16,8 @@
                     <li><br>
                         <a href="/posts/<%=posts[i].id; %>">
                         <%=posts[i].title; %> </a><br>
-                        <%=posts[i].chapters; %>
+                        by <%=posts[i].author;%><br>
+                        Chapters <%=posts[i].chapters; %>
                     </li>
                 <% } %>
             </ul>
