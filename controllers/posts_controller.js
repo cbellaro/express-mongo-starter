@@ -9,6 +9,14 @@ const isAuthenticated = (req, res, next) => {
   }
 }
 
+// const isOriginalPoster = (req, res, next) => {
+//   if (req.session.currentUser === req.) {
+//     return next()
+//   } else {
+//     res.send('<a  href="/">Sorry, you did not author that post </a>')
+//   }
+// }
+
 // index
 router.get('/', (req, res) => {
     Post.find({}, (err, allPosts) => {
@@ -29,16 +37,12 @@ router.get('/new', isAuthenticated, (req, res) => {
 
 // Show
 router.get('/:id', (req, res) => {
-  if (req.session.currentUser) {
     Post.findById(req.params.id, (err, foundPost) => {
       res.render('show.ejs', {
         post: foundPost,
         currentUser: req.session.currentUser
-      })
     })
-  } else {
-    res.redirect('/sessions/new')
-  }
+  })
 })
 
 // Edit

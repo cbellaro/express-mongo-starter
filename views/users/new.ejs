@@ -4,10 +4,13 @@
     <%- include ('../partials/head.ejs') %>
   </head>
   <body>
+    <a href="/"><div class="logo">
+        <img class="book" src="https://i.imgur.com/oUVHIvg.png"><h1>Bookly</h1>
+    </div></a>
     <nav class="black">
       <%- include ('../partials/nav.ejs') %>
     </nav>
-    <div class="container">
+    <div class="post-container">
       <h1>New User</h1>
       <form action="/users" method="POST">
         <label for="name">User Name:</label>
