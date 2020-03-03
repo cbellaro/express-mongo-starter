@@ -13,19 +13,20 @@
         <div class="post">
             <h2><%=post.title; %></h2>
             <h4>By <%=post.author; %></h4>
-            <h4>Chapters <%=post.chapters; %></h4>
-            <%=post.body; %>
-            <br><br>
-            <button class="btn-small yellow darken-2"><a id = "edit" href="/posts/<%=post.id; %>/edit">EDIT</a></button>
+            <h4>Chapter <%=post.chapters; %></h4>
+            <div class="post-body">
+                <%=post.body; %><br>
+            </div>
+            <button id="edit-button" class="btn-small yellow darken-2"><a id="edit" href="/posts/<%=post.id; %>/edit">EDIT</a></button>
             <form action="/posts/<%=post.id; %>?_method=DELETE" method="POST">
-                <input type="submit"  value="DELETE" class="btn-small yellow darken-2" />
+                <input type="submit" id="delete" value="DELETE" class="btn-small yellow darken-2" />
             </form>
             <br><br>
         </div>
-        <footer>
-            <nav class="black">
-                <a href="/posts">Back to discussions</a>
-            </nav>
-        </footer>
     </body>
+    <footer>
+        <nav class="black">
+            <a href="/posts">Back to discussions</a>
+        </nav>
+    </footer>
 </html>

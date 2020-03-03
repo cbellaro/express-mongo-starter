@@ -1,14 +1,14 @@
 <ul class="right">
-  <li><a href="/posts/new">Create a New Post</a></li>
+  <li><a id="new-post" href="/posts/new">Create a New Post</a></li>
   <% if (currentUser) { %>
   <li>Signed in as <%= currentUser.username %></li>
   <li>
     <form action="/sessions?_method=DELETE" method="POST">
-      <input type="submit" value="Sign Out" class="btn-small black" />
+      <input type="submit" id="sign-out" value="Sign Out" class="btn-small black" />
     </form>
   </li>
   <% } else { %>
-  <li><a href="/users/new">Sign Up</a></li>
-  <li><a href="/sessions/new">Sign In</a></li>
+  <li><a id="sign-up" href="/users/new">Sign Up</a></li>
+  <li><a id="sign-in" href="/sessions/new">Sign In</a></li>
   <% } %>
 </ul>
