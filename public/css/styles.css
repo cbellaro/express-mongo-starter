@@ -1,8 +1,13 @@
 body{
-    background: url("https://i.imgur.com/5vkTr0E.jpg") no-repeat center center fixed;
+    background-color: #9FB1BC;
+    background-image: url("https://i.imgur.com/5vkTr0E.jpg");
+    background-position: top;
+    background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
+    height: 100%;
+    width: 100%;
     min-width: 500px;
-    height: 100vh;
 }
 
 .logo > h1{
@@ -232,8 +237,14 @@ footer{
 @media (min-width: 1024px){
 
     body{
-        background: url("https://i.imgur.com/5vkTr0E.jpg") no-repeat center center fixed;
+        background-color: #9FB1BC;
+        background-image: url("https://i.imgur.com/5vkTr0E.jpg");
+        background-position: top;
+        background-repeat: no-repeat;
         background-size: cover;
+        background-attachment: fixed;
+        height: 100%;
+        width: 100%;
     }
 
     .logo > h1{
