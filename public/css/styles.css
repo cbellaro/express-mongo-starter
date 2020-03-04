@@ -1,7 +1,8 @@
 body{
     background: url("https://i.imgur.com/5vkTr0E.jpg") no-repeat center center fixed;
-    background-size: 100vh;
+    background-size: cover;
     min-width: 500px;
+    height: 100vh;
 }
 
 .logo > h1{
