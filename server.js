@@ -13,11 +13,11 @@ require('dotenv').config()
 const app = express ();
 const db = mongoose.connection;
 const PORT = process.env.PORT || 3000;
-const MONGODB_URI = process.env.MONGODB_URI || 'mongodb://localhost:27017/posts';
+const MONGODBURI = process.env.MONGODBURI || 'mongodb://localhost:27017/posts';
 
 // Error / success
 db.on('error', (err) => console.log(err.message + ' is Mongod not running?'));
-db.on('connected', () => console.log('mongo connected: ', MONGODB_URI));
+db.on('connected', () => console.log('mongo connected: ', MONGODBURI));
 db.on('disconnected', () => console.log('mongo disconnected'));
 
 // open the connection to mongo
@@ -29,7 +29,7 @@ db.on('open' , ()=>{});
 
 app.use(express.urlencoded({ extended: false }));
 app.use(methodOverride('_method'));
-mongoose.connect(MONGODB_URI ,  { useNewUrlParser: true, useUnifiedTopology: true });
+mongoose.connect(MONGODBURI ,  { useNewUrlParser: true, useUnifiedTopology: true });
 app.use(session({
     secret: process.env.SECRET,
     resave: false,
